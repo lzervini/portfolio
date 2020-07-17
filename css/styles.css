@@ -7181,7 +7181,7 @@ h3 {
     line-height: 2.5rem; } }
 
 .divider-custom {
-  margin: 1.25rem 0 1.5rem;
+  margin: 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -7436,3 +7436,17 @@ form .row:first-child .floating-label-form-group {
       stroke-dashoffset: 0;
     }
   }
+
+  #hello-wrapper > p{
+    font-family: 'Swanky and Moo Moo', cursive;
+  }
+
+button > a {
+  color : #212529;
+}
+
+button > a:hover {
+  color : white;
+  text-decoration: none;
+  font-weight: 700;
+}

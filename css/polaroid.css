@@ -1,3 +1,8 @@
+#hello-wrapper{
+  margin-top: 100px;
+  margin-bottom:100px;
+}
+
 .wrapper {
   width: 75%;
   padding: 0 2rem;
@@ -20,7 +25,7 @@
   line-height: 2em;
 }
 .item {
-  width: 50%;
+  width: 65%;
   display: inline-block;
   margin-top: 2rem;
   filter: grayscale(100%);
