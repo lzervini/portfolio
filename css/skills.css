@@ -75,19 +75,19 @@
     border-color: #dbcbd8;
 }
 .progress.pink .progress-left .progress-bar{
-    animation: loading-3 1s linear forwards 1.8s;
+    animation: loading-5 1s linear forwards 1.8s;
 }
 .progress.green .progress-bar{
     border-color: #9ad4d6;
 }
 .progress.green .progress-left .progress-bar{
-    animation: loading-4 0.4s linear forwards 1.8s;
+    animation: loading-6 0.4s linear forwards 1.8s;
 }
 .progress.blue .progress-bar{
     border-color: #101935;
 }
 .progress.blue .progress-left .progress-bar{
-    animation: loading-5 1.2s linear forwards 1.8s;
+    animation: loading-4 1.2s linear forwards 1.8s;
 }  
 @keyframes loading-1{
     0%{
