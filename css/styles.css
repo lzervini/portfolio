@@ -7374,8 +7374,8 @@ form .row:first-child .floating-label-form-group {
   border-top: 1px solid #e9ecef; }
 
 .footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   background-color: #986C6A;
   color: #fff; }
 
@@ -7449,4 +7449,17 @@ button > a:hover {
   color : white;
   text-decoration: none;
   font-weight: 700;
+}
+
+.france{
+  width: 40px;
+	height: 40px;
+}
+
+.freepik{
+  font-size: 0.1rem;
+}
+
+form{
+  margin-top: 25px;
 }
