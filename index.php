@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -449,23 +450,29 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Form Contact Section Content-->
+                <?php if(array_key_exists('errors', $_SESSION)): ?>
+                    <div class="alert alert-danger">
+                        <?= implode('<br>', $_SESSION['errors']); ?>
+                    </div>
+                <?php unset($_SESSION['errors']); endif ?>
+                
                 <form action="php/contact.php" id="form_contact" class="form-horizontal"  method="post">
                     <div class="form-row ">
                         <div class="form-group col-md-6">
                             <label for="name">Nom :</label>
-                            <input type="text" id="name" class="form-control" name="name" placeholder="Entrez votre nom ">
+                            <input type="text" id="name" class="form-control" name="name" placeholder="Entrez votre nom " required>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="mail">Email :</label>
-                            <input type="mail" id="mail" class="form-control" name="mail" placeholder="Entrez votre e-mail">
+                            <input type="mail" id="mail" class="form-control" name="mail" placeholder="Entrez votre e-mail" required>
                         </div>
                     </div>
                     <div class="form-group ">
                         <label for="msg">Message :</label>
-                        <textarea id="msg" class="form-control" name="msg" placeholder="Entrez votre message ..."></textarea>
+                        <textarea id="msg" class="form-control" name="msg" placeholder="Entrez votre message ..." required></textarea>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-outline-dark" name="form_button">Envoyer le message </button>
+                        <button type="submit" class="btn btn-outline-dark" name="form_button" required>Envoyer le message </button>
                     </div>
                 </form>
 
