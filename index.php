@@ -449,27 +449,35 @@
                       </svg></div>
                     <div class="divider-custom-line"></div>
                 </div>
+
                 <!-- Form Contact Section Content-->
                 <?php if(array_key_exists('errors', $_SESSION)): ?>
                     <div class="alert alert-danger">
                         <?= implode('<br>', $_SESSION['errors']); ?>
                     </div>
-                <?php unset($_SESSION['errors']); endif ?>
+                <?php endif; ?>
+
+                <?php if(array_key_exists('success', $_SESSION)): ?>
+                    <div class="alert alert-success">
+                      Votre e-mail a bien été envoyé !
+                    </div>
+                <?php endif; ?>
+                
                 
                 <form action="php/contact.php" id="form_contact" class="form-horizontal"  method="post">
                     <div class="form-row ">
                         <div class="form-group col-md-6">
                             <label for="name">Nom :</label>
-                            <input type="text" id="name" class="form-control" name="name" placeholder="Entrez votre nom " required>
+                            <input type="text" id="name" class="form-control" name="name" placeholder="Entrez votre nom " value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : ''; ?>"  required>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="mail">Email :</label>
-                            <input type="mail" id="mail" class="form-control" name="mail" placeholder="Entrez votre e-mail" required>
+                            <input type="email" id="mail" class="form-control" name="mail" placeholder="Entrez votre e-mail" value="<?= isset($_SESSION['inputs']['mail']) ? $_SESSION['inputs']['mail'] : ''; ?>" required>
                         </div>
                     </div>
                     <div class="form-group ">
                         <label for="msg">Message :</label>
-                        <textarea id="msg" class="form-control" name="msg" placeholder="Entrez votre message ..." required></textarea>
+                        <textarea id="msg" class="form-control" name="msg" placeholder="Entrez votre message ..."  required><?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : ''; ?></textarea>
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-outline-dark" name="form_button" required>Envoyer le message </button>
@@ -489,7 +497,7 @@
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-6 mb-5 mb-lg-0">
-                        <h4 class="mb-4">À TRAVERS LE WEB</h4><a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/l%C3%A9a-zervini/"><i class="fab fa-fw fa-linkedin-in"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://github.com/lzervini"><i class="fab fa-fw fa-github "></i></a>
+                        <h4 class="mb-4">À TRAVERS LE WEB</h4><a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/l%C3%A9a-zervini/" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a><a class="btn btn-outline-light btn-social mx-1"  href="https://github.com/lzervini" target="_blank"><i class="fab fa-fw fa-github "></i></a>
                     </div>
                     <!-- Footer About Text-->
                     
@@ -514,3 +522,12 @@
         <script src="js/scripts.js"></script>
     </body>
 </html>
+
+<?php
+
+unset($_SESSION['inputs']);
+unset($_SESSION['errors']);
+unset($_SESSION['success']);
+
+
+?>
