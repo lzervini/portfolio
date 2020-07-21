@@ -466,20 +466,20 @@
                 
                 <form action="php/contact.php" id="form_contact" class="form-horizontal"  method="post">
                     <div class="form-row ">
-                        <div class="form-group col-md-6">
+                        <div class="form-group  col-md-4 offset-md-2">
                             <label for="name">Nom :</label>
                             <input type="text" id="name" class="form-control" name="name" placeholder="Entrez votre nom " value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : ''; ?>"  required>
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group  col-md-4">
                             <label for="mail">Email :</label>
                             <input type="email" id="mail" class="form-control" name="mail" placeholder="Entrez votre e-mail" value="<?= isset($_SESSION['inputs']['mail']) ? $_SESSION['inputs']['mail'] : ''; ?>" required>
                         </div>
                     </div>
-                    <div class="form-group ">
+                    <div class="form-group col-md-8 offset-md-2 p-0">
                         <label for="msg">Message :</label>
                         <textarea id="msg" class="form-control" name="msg" placeholder="Entrez votre message ..."  required><?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : ''; ?></textarea>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group text-center ">
                         <button type="submit" class="btn btn-outline-dark" name="form_button" required>Envoyer le message </button>
                     </div>
                 </form>
