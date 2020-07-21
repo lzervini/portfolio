@@ -6,8 +6,8 @@
     }
 
     
-    if (!array_key_exists('mail', $_POST) || $_POST['mail'] == ''){
-        $errors['mail'] = "Vous n'avez pas renseigné votre email.";
+    if (!array_key_exists('mail', $_POST) || $_POST['mail'] == '' || !filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL)){
+        $errors['mail'] = "Vous n'avez pas renseigné un e-mail valide.";
     }
 
     
@@ -15,17 +15,21 @@
         $errors['msg'] = "Vous n'avez pas renseigné votre message.";
     }
 
+    session_start();
+
     if(!empty($errors)){
         session_start();
         $_SESSION['errors'] = $errors;
+        $_SESSION['inputs'] = $_POST;
         header('Location: ../index.php');
     }else{
+        $_SESSION['success'] = 1;
         $msg = $_POST['msg'];
-        $headers = 'FROM: test@codeur.online';
-        mail('lea.z@codeur.online', 'Formulaire de contact', $msg, $headers);
+        $headers = 'FROM: ' . $_POST['mail'];
+        mail('lea.z@codeur.online', 'Message de ' .$_POST['name'], $msg, $headers);
+        header('Location: ../index.php');
     }
 
-var_dump($errors);
 die();
 
 
