@@ -120,25 +120,25 @@
                 <!--Compétence section -->
                 <div class="container d-flex no-wrap justify-content-between align-items-center">
                     <div>
-                        <img src="assets/img/html.svg" alt="logo HTML 5" width="100px">
+                        <img class="skills" src="assets/img/html.svg" alt="logo HTML 5">
                     </div>
                     <div>
 
-                        <img src="assets/img/css.svg" alt="logo CSS 3" width="100px">
+                        <img class="skills" src="assets/img/css.svg" alt="logo CSS 3">
                     </div>
                     <div>
 
-                        <img src="assets/img/javascript.svg" alt="logo JS" width="100px">
+                        <img class="skills" src="assets/img/javascript.svg" alt="logo JS">
                     </div>
                     <div>
 
-                        <img src="assets/img/php.svg" alt="logo CSS PHP" width="100px">
+                        <img class="skills" src="assets/img/php.svg" alt="logo CSS PHP">
                     </div>
                     <div>
-                        <img src="assets/img/mysql.svg" alt="logo MYSQL" width="100px">
+                        <img class="skills" src="assets/img/mysql.svg" alt="logo MYSQL">
                     </div>
                     <div>
-                        <img src="assets/img/git.svg" alt="logo GIT"  width="100px">
+                        <img class="skills" src="assets/img/git.svg" alt="logo GIT">
                     </div>
                 </div>
 
@@ -217,7 +217,6 @@
               
             </div>
           </div>
-        </div>
     
         </section>
         <section class="page-section portfolio bg-primary text-white" id="contact">
