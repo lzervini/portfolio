@@ -87,7 +87,7 @@
                                 Je suis aujourd'hui en formation à l'Access Code School de Besançon pour devenir Développeuse Web/Mobile.</br>
                                 Je vous invite à en savoir plus :
                                 <div>
-                                    <button type="submit" class="btn btn-primary"   ><a href="PDF/CV_ZERVINILea.pdf" target="_blank"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-person pr-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <button type="submit" class="btn btn-primary"   ><a href="PDF/CV_LEA.pdf" target="_blank"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-person pr-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M4 1h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H4z"/>
                                         <path d="M13.784 14c-.497-1.27-1.988-3-5.784-3s-5.287 1.73-5.784 3h11.568z"/>
                                         <path fill-rule="evenodd" d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
@@ -120,25 +120,25 @@
                 <!--Compétence section -->
                 <div class="container d-flex no-wrap justify-content-between align-items-center">
                     <div>
-                        <img src="assets/img/html.svg" alt="logo HTML 5" srcset="" width="100px">
+                        <img src="assets/img/html.svg" alt="logo HTML 5" width="100px">
                     </div>
                     <div>
 
-                        <img src="assets/img/css.svg" alt="logo CSS 3" srcset="" width="100px">
+                        <img src="assets/img/css.svg" alt="logo CSS 3" width="100px">
                     </div>
                     <div>
 
-                        <img src="assets/img/javascript.svg" alt="logo JS" srcset="" width="100px">
+                        <img src="assets/img/javascript.svg" alt="logo JS" width="100px">
                     </div>
                     <div>
 
-                        <img src="assets/img/php.svg" alt="logo CSS PHP" srcset="" width="100px">
+                        <img src="assets/img/php.svg" alt="logo CSS PHP" width="100px">
                     </div>
                     <div>
-                        <img src="assets/img/mysql.svg" alt="logo MYSQL" srcset="" width="100px">
+                        <img src="assets/img/mysql.svg" alt="logo MYSQL" width="100px">
                     </div>
                     <div>
-                        <img src="assets/img/git.svg" alt="logo GIT" srcset="" width="100px">
+                        <img src="assets/img/git.svg" alt="logo GIT"  width="100px">
                     </div>
                 </div>
 
@@ -166,11 +166,10 @@
               <!-- <li data-target="#magicCarousel" data-slide-to="2"></li>
               <li data-target="#magicCarousel" data-slide-to="3"></li> -->
             </ol>
-            
       <!--    Carousel Slider    -->
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
-                <img src="assets/img/dashboard.png" alt="Dashboard" class="d-block w-100">
+                <img src="assets/img/dashboard.png" alt="Projet Dashboard" class="d-block w-100">
                 <div class="carousel-caption">
                   <h3><a href="https://leaz.promo-39.codeur.online/dashboard_ampoule/">Dashboard</a></h3>
                   <p>Réalisation d'un dashboard avec enregistrement au préalable + possibilité d'ajouter, de modifier ou de supprimer les données. </br>
@@ -180,10 +179,10 @@
               </div>
               
              <div class="carousel-item">
-                <img src="assets/img/portfolio.png" class="d-block w-100">
+                <img src="assets/img/portfolio.png" alt ="Image du portfolio" class="d-block w-100">
                 <div class="carousel-caption">
                   <h3>Portfolio</h3>
-                  <p>Réalisation de mon portfolio.
+                  <p>Réalisation de mon portfolio. </br>
                      Création du dashboard avec : BOOTSTRAP - JS - SASS</p>
                 </div> 
               </div> 
@@ -203,6 +202,8 @@
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis soluta accusamus sequi eos consectetur! Animi minima modi ad at similique velit quibusdam veritatis sequi placeat?</p>
                 </div> 
               </div>  -->
+              </div>
+
               
       <!--     Carousel Controls     -->
               <a href="#magicCarousel" class="carousel-control-prev" role="button" data-slide="prev">
@@ -218,7 +219,6 @@
           </div>
         </div>
     
-            </div>
         </section>
         <section class="page-section portfolio bg-primary text-white" id="contact">
             <div class="container">
@@ -237,13 +237,14 @@
                 </div>
                 <div class="envelope mt-5">
                 <div class="back paper"></div>
-                <div class="contents">             <a href="mailto:email@example.com" type="button" class="btn btm-primary">Envoyez-moi un message !</a>
+                <div class="contents">             
+                <a href="mailto:email@example.com" type="button" class="btn btm-primary">Envoyez-moi un message !</a>
                 </div>
                     <div class="front paper"></div>
                 </div>
 
-                </section>
-</div>
+                </div>
+            </section>
         <footer class="footer text-center">
             <div class="container">
                 <div class="row">
@@ -281,7 +282,7 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <script src="js/slide.js">/script>
+    
     </body>
 </html>
 
