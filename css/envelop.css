@@ -1,0 +1,68 @@
+.envelope {
+  position: relative;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  height: 400px;
+}
+.envelope .paper {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.envelope .back:before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 150px 100px 150px;
+  border-color: transparent transparent #999 transparent;
+}
+.envelope .back:after {
+  content: "";
+  display: block;
+  background-color: #ddbebe;
+  width: 300px;
+  height: 200px;
+}
+.envelope .front {
+  top: 100px;
+}
+.envelope .front:after {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 100px;
+  background-color: grey;
+}
+.envelope .front:before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 100px 150px 0px 150px;
+  border-color: transparent grey;
+}
+.envelope .contents {
+  position: relative;
+  top: 50px;
+  display: block;
+  width: 250px;
+  height: 180px;
+  background-color: white;
+  margin: 0 auto;
+}
+.envelope a {
+  margin-left: 21px;
+  margin-top: 15px;
+  cursor: pointer;
+  border: 1px solid #986C6A;
+}
+.envelope a:hover {
+  background-color: #9b82818f;
+}
+
+/*# sourceMappingURL=envelop.css.map */
